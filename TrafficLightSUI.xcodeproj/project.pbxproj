@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEF89DE92BD110440011C9C2 /* TraficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF89DE92BD110440011C9C2 /* TrafficLightSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF89DEC2BD110440011C9C2 /* TraficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficLightApp.swift; sourceTree = "<group>"; };
 		CEF89DEE2BD110440011C9C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEF89DF02BD110450011C9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		CEF89DEA2BD110440011C9C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEF89DE92BD110440011C9C2 /* TraficLight.app */,
+				CEF89DE92BD110440011C9C2 /* TrafficLightSUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEF89DE82BD110440011C9C2 /* TraficLight */ = {
+		CEF89DE82BD110440011C9C2 /* TrafficLightSUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEF89DF72BD110450011C9C2 /* Build configuration list for PBXNativeTarget "TraficLight" */;
+			buildConfigurationList = CEF89DF72BD110450011C9C2 /* Build configuration list for PBXNativeTarget "TrafficLightSUI" */;
 			buildPhases = (
 				CEF89DE52BD110440011C9C2 /* Sources */,
 				CEF89DE62BD110440011C9C2 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TraficLight;
+			name = TrafficLightSUI;
 			productName = TraficLight;
-			productReference = CEF89DE92BD110440011C9C2 /* TraficLight.app */;
+			productReference = CEF89DE92BD110440011C9C2 /* TrafficLightSUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEF89DE42BD110440011C9C2 /* Build configuration list for PBXProject "TraficLight" */;
+			buildConfigurationList = CEF89DE42BD110440011C9C2 /* Build configuration list for PBXProject "TrafficLightSUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEF89DE82BD110440011C9C2 /* TraficLight */,
+				CEF89DE82BD110440011C9C2 /* TrafficLightSUI */,
 			);
 		};
 /* End PBXProject section */
@@ -287,9 +287,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mlkm.TraficLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,16 +320,20 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mlkm.TraficLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEF89DE42BD110440011C9C2 /* Build configuration list for PBXProject "TraficLight" */ = {
+		CEF89DE42BD110440011C9C2 /* Build configuration list for PBXProject "TrafficLightSUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEF89DF52BD110450011C9C2 /* Debug */,
@@ -334,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEF89DF72BD110450011C9C2 /* Build configuration list for PBXNativeTarget "TraficLight" */ = {
+		CEF89DF72BD110450011C9C2 /* Build configuration list for PBXNativeTarget "TrafficLightSUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEF89DF82BD110450011C9C2 /* Debug */,
