@@ -11,6 +11,7 @@
 		CEF89DEF2BD110440011C9C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF89DEE2BD110440011C9C2 /* ContentView.swift */; };
 		CEF89DF12BD110450011C9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF89DF02BD110450011C9C2 /* Assets.xcassets */; };
 		CEF89DF42BD110450011C9C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF89DF32BD110450011C9C2 /* Preview Assets.xcassets */; };
+		CEF89DFB2BD1CE490011C9C2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF89DFA2BD1CE490011C9C2 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CEF89DEE2BD110440011C9C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEF89DF02BD110450011C9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF89DF32BD110450011C9C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEF89DFA2BD1CE490011C9C2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CEF89DEC2BD110440011C9C2 /* TraficLightApp.swift */,
 				CEF89DEE2BD110440011C9C2 /* ContentView.swift */,
+				CEF89DFA2BD1CE490011C9C2 /* CircleView.swift */,
 				CEF89DF02BD110450011C9C2 /* Assets.xcassets */,
 				CEF89DF22BD110450011C9C2 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF89DFB2BD1CE490011C9C2 /* CircleView.swift in Sources */,
 				CEF89DEF2BD110440011C9C2 /* ContentView.swift in Sources */,
 				CEF89DED2BD110440011C9C2 /* TraficLightApp.swift in Sources */,
 			);

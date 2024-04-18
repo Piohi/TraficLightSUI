@@ -9,35 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isPressed: Bool = false
-    @State private var curentLight = CurrentLight.red
-    @State private var opasRed = 0.3
-    @State private var opasYellow = 0.3
-    @State private var opasGreen = 0.3
-    private let lightOn = 1.0
-    private let lightOff = 0.3
+    @State private var currentLight: CurrentLight = .off
     var body: some View {
         VStack {
-           Circle()
-                .foregroundStyle(.red)
-                .frame(width: 130, height: 130)
-                .opacity(opasRed)
-                .overlay(Circle().stroke(.white, lineWidth: 5))
-                .shadow(radius: 10)
-                .padding()
-            Circle()
-                 .foregroundStyle(.yellow)
-                 .frame(width: 130, height: 130)
-                 .opacity(opasYellow)
-                 .overlay(Circle().stroke(.white, lineWidth: 5))
-                 .shadow(radius: 10)
-                 .padding()
-            Circle()
-                 .foregroundStyle(.green)
-                 .frame(width: 130, height: 130)
-                 .opacity(opasGreen)
-                 .overlay(Circle().stroke(.white, lineWidth: 5))
-                 .shadow(radius: 10)
-                 .padding()
+            CircleView(color: .red, opacity: currentLight == .red ? 1 : 0.3)
+            CircleView(color: .yellow, opacity: currentLight == .yellow ? 1 : 0.3)
+            CircleView(color: .green, opacity: currentLight == .green ? 1 : 0.3)
             Spacer()
             Button(action: {switchLight()}, label: {
                 ZStack {
@@ -46,12 +23,13 @@ struct ContentView: View {
                         .overlay(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)).stroke(Color.white, lineWidth: 5))
                         .shadow(radius: 5)
                     
-                    Text(isPressed ? "NEXT" : "START")
+                    Text(currentLight != .off ? "NEXT" : "START")
                         .foregroundStyle(.white)
                         .font(.title)
                         .fontWeight(.bold)
                 }
-            })
+            }
+            )
         }
         
     }
@@ -61,26 +39,23 @@ extension ContentView {
         if isPressed {}
         else { isPressed = true}
         
-        switch curentLight {
+        switch currentLight {
                case .red:
-                   opasGreen = lightOff
-                   opasRed = lightOn
-                   curentLight = .yellow
+            currentLight = .yellow
                case .yellow:
-            opasRed = lightOff
-            opasYellow = lightOn
-                   curentLight = .green
+            currentLight = .green
                case .green:
-            opasYellow = lightOff
-            opasGreen = lightOn
-                   curentLight = .red
-               }
+            currentLight = .red
+        case .off:
+            currentLight = .red
+            
+        }
     }
 }
 
 extension ContentView {
     enum CurrentLight {
-        case red, yellow, green
+        case off, red, yellow, green
     }
 }
 
